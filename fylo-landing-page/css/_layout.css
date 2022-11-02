@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
   font-family: var(--font-primary);
+  padding: 3rem 5rem;
 }
 
 .main-nav-list {
@@ -31,6 +32,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  padding: 1rem 5rem;
 }
 
 .heading-main {
@@ -62,24 +64,6 @@
   box-shadow: 0 1rem 2rem rgba(#000, 0.5);
 }
 
-.btn {
-  padding: 1.2rem 4rem;
-  background-color: var(--color-tertiary-1);
-  border: none;
-  color: var(--color-secondary-1);
-  font-family: inherit;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.btn:hover {
-  transform: scale(1.1);
-}
-
-.btn:active {
-  transform: scale(1);
-}
-
 .section-img {
   height: 100%;
   width: 100%;
@@ -90,7 +74,7 @@
   display: flex;
   background-image: url(../images/bg-curve-desktop.svg);
   background-repeat: no-repeat;
-  padding: 20rem 0;
+  padding: 20rem 5rem;
   gap: 2rem;
 }
 
@@ -132,6 +116,7 @@
   align-items: center;
   padding: 10rem 5rem;
   gap: 2rem;
+  margin: 0 !important;
 }
 
 .cta-heading {
@@ -152,6 +137,50 @@
   gap: 1.5rem;
 }
 
-.btn--cta {
-  align-self: flex-start;
+.footer-container {
+  background-color: var(--color-primary-1);
+  padding: 10rem 5rem;
+}
+
+.footer-nav {
+  list-style: none;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: var(--color-secondary-2);
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  text-decoration: none;
+  color: var(--color-secondary-1);
+}
+
+.footer-listing {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.fylo-logo-footer {
+  margin-bottom: 2rem;
+}
+
+.footer-icon {
+  margin-right: 1rem;
 }

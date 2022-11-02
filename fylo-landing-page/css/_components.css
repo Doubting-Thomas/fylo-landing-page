@@ -1,0 +1,21 @@
+.btn {
+  padding: 1.2rem 4rem;
+  background-color: var(--color-tertiary-1);
+  border: none;
+  color: var(--color-secondary-1);
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(1);
+}
+
+.btn--cta {
+  align-self: flex-start;
+}
