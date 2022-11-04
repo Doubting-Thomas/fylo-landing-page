@@ -16,6 +16,11 @@
   transform: scale(1);
 }
 
+.btn--hero {
+  transition: all 0.3s;
+  animation: moveInRight 1.5s;
+}
+
 .btn--cta {
   align-self: flex-start;
 }

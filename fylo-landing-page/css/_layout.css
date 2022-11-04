@@ -40,12 +40,15 @@
   color: var(--color-primary-1);
   font-weight: 700;
   font-size: 3rem;
+  transition: all 3s;
+  animation: moveInLeft 1s;
 }
 
 .text-description {
   font-family: var(--font-secondary);
   color: var(--color-primary-1);
   font-weight: 700;
+  animation: moveInLeft 1s;
 }
 
 .hero-cta {
@@ -57,6 +60,7 @@
 .text-input {
   width: 30rem;
   padding: 1rem 1.5rem;
+  animation: moveInLeft 1s;
 }
 
 .text-input:focus {
@@ -68,6 +72,33 @@
   height: 100%;
   width: 100%;
   display: block;
+  transition: all 0.3s;
+  animation-delay: 30s;
+  animation: moveInRight 1.5s;
+}
+
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    transform: translateX(5rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
 }
 
 .feature-container {
