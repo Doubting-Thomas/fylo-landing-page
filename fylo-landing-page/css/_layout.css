@@ -77,30 +77,6 @@
   animation: moveInRight 1.5s;
 }
 
-@keyframes moveInLeft {
-  0% {
-    transform: translateX(-5rem);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translate(0);
-    opacity: 1;
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    transform: translateX(5rem);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translate(0);
-    opacity: 1;
-  }
-}
-
 .feature-container {
   display: flex;
   background-image: url(../images/bg-curve-desktop.svg);
@@ -115,6 +91,8 @@
   width: 40rem;
   padding: 5rem 4rem;
   color: var(--color-primary-1);
+  transition: all .3s;
+  animation: moveInTop 2s;
 }
 
 .quote-icon {

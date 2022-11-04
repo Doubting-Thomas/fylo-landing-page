@@ -6,6 +6,7 @@
   font-family: inherit;
   cursor: pointer;
   transition: all 0.3s;
+  animation: moveInRight 1.5s;
 }
 
 .btn:hover {
@@ -18,9 +19,17 @@
 
 .btn--hero {
   transition: all 0.3s;
-  animation: moveInRight 1.5s;
 }
 
 .btn--cta {
   align-self: flex-start;
+  transition: all 0.3s;
+}
+
+.btn--cta:hover {
+  transform: scale(0.9);
+}
+
+.btn--cta:active {
+  transform: scale(1);
 }
